@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/css.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- This link for Chat-Box -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        #cont-body {
+            /* background-color: rgba(0, 0, 0, 0.8); */
+            /* color: #fff; */
+        }
+
+        #scroll-to-top {
+            color: #000;
+        }
+
+        .chatbox-wrapper {
+            color: #000;
+        }
+
+        .cont-form {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .cont-form .c-icon {
+            /* color: #32ff7e; */
+        }
+
+        .cont-form .cc-icon i {
+            font-size: 40px;
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 50%;
+            /* color: #32ff7e; */
+        }
+
+        .cont-form .cc-icon i:hover {}
+
+        .form-- {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-- .row1 {
+            box-sizing: border-box;
+            /* border: 2px solid red; */
+        }
+
+        .form-- .col-- {
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 10px;
+            /* border: 2px solid #32ff7e; */
+            background: rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+
+        #mesg {
+            background: rgba(0, 0, 0, 0.1);
+            /* border: 2px solid #32ff7e; */
+            border-radius: 10px;
+            min-height: 300px;
+            color: #fff;
+        }
+
+        .form-- button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont-body">
+
+
+        <div class="header">
+
+            <div class="header-1 container">
+                <img onclick="home()" src="images/logo-header.svg" class="logo btn" alt="" data-aos="fade-right">
+
+                <nav class="navbar" data-aos="fade-down">
+                    <ul class="navbar-list">
+                        <li><a class="navbar-link" href="index.html">Home</a></li>
+                        <li><a class="navbar-link" href="portfolio.html">Portfolio</a></li>
+                        <li><a class="navbar-link link3" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="contact-btn">
+                    <div class="mobile-navbar-btn" data-aos="fade-left">
+                        <i class="fa-solid fa-bars mobile-nav-icon float-end" id="open-btn"></i>
+                        <i class="fa-regular fa-circle-xmark mobile-nav-icon" id="close-btn"></i>
+                    </div>
+                    <i onclick="homeNew()" class="fa-brands fa-dribbble float-end contact-btn-2 btn"></i>
+                    <button onclick="contact()" class="btn s-btn-color float-end contact-btn-1">Contact Me</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="c-f-c" class="container cont-form lead">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="c-icon"><i class="fa-solid fa-minus f-1"></i>Contact Me</span>
+                    <h1>Get In Touch With Me</h1>
+                    <p>
+                        The technological revolution is changing aspect of our lives, and the fabric of society itself.
+                        it's
+                        also changing the way we learn and what we learn. Factual knowledge is less prized when
+                        everything
+                        you ever need to know can be found on your phone. There's no imperative to be an expert Factual
+                        knowledge is less prized when everything you ever need to know can be found at doing everything.
+                    </p>
+                    <span class="cc-icon">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <h2>Phone</h2>
+                        <p>+99 (0) 101 0000 888</p>
+                        <p>+99 (0) 101 0000 777</p>
+                    </span>
+                    <span class="cc-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h2>Emial</h2>
+                        <p>Info@yourdomain.com</p>
+                        <p>Info@yourdomain.net</p>
+                    </span>
+                </div>
+
+
+                <div class="col-md-6 form--">
+
+                    <form action="">
+                        <div class="row row1">
+                            <input class="col-md-6 col--" type="text" placeholder="Full Name" autocomplete="off">
+                            <input class="col-md-6 col--" type="email" placeholder="Email" autocomplete="off">
+                        </div>
+                        <div class="row row2">
+                            <textarea type="text" name="" id="mesg" placeholder="Message *" autocomplete="off"></textarea>
+                        </div>
+                        <button class="btn s-btn-color">Sand To ME</button>
+                    </form>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="footer" data-aos="fade-down">
+            <div class="c7">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-3 col1">
+                            <img onclick="home()" src="images/logo-header.svg" alt="">
+                        </div>
+                        <div class="col-md-6 col2 footer-text">
+                            © 2023 Freelancer - Phlox Elementor WordPress Theme. All rights reserved.
+                        </div>
+                        <div class="col-md-3 col3">
+                            <i onclick="homeNew()" class="fa-solid fa-comment-dots"></i>
+                            <i onclick="homeNew()" class="fa-brands fa-linkedin-in"></i>
+                            <i onclick="homeNew()" class="fa-brands fa-instagram"></i>
+                            <i onclick="homeNew()" class="fa-brands fa-behance"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <i class="fa-solid fa-arrow-up" id="scroll-to-top"></i>
+
+
+        <!-- Chat Box -->
+        <div class="chatbox-wrapper">
+            <div class="chatbox-toggle">
+                <!-- <i class='bx bx-message-dots'></i> -->
+                <i class="fa-regular fa-comment"></i>
+            </div>
+            <div class="chatbox-message-wrapper">
+                <div class="chatbox-message-header">
+                    <div class="chatbox-message-profile">
+                        <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="" class="chatbox-message-image">
+                        <div>
+                            <h4 class="chatbox-message-name">Jonathan Doe</h4>
+                            <p class="chatbox-message-status">online</p>
+                        </div>
+                    </div>
+                    <div class="chatbox-message-dropdown">
+                        <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+                        <ul class="chatbox-message-dropdown-menu">
+                            <li>
+                                <a href="#">Search</a>
+                            </li>
+                            <li>
+                                <a href="#">Report</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chatbox-message-content">
+                    <h4 class="chatbox-message-no-message">You don't have message yet!</h4>
+                    <!-- <div class="chatbox-message-item sent">
+                    <span class="chatbox-message-item-text">
+						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+					</span>
+					<span class="chatbox-message-item-time">08:30</span>
+				</div>
+				<div class="chatbox-message-item received">
+                    <span class="chatbox-message-item-text">
+                        Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+					</span>
+					<span class="chatbox-message-item-time">08:30</span>
+				</div> -->
+                </div>
+                <div class="chatbox-message-bottom">
+                    <form action="#" class="chatbox-message-form">
+                        <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                        <button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+<script src="JS/file.js">
+
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    }
+    );
+</script>
+
+</html>
