@@ -63,19 +63,23 @@ function viewAll() {
     let slides = document.querySelectorAll('.slide-container');
     let index = 0;
 
-    //  next function 
-    function next() {
+//  next function 
+function next() {
+    if (slides.length > 0) {
         slides[index].classList.remove('active');
         index = (index + 1) % slides.length;
-        slides[index].classList.add('active')
+        slides[index].classList.add('active');
     }
+}
 
-    // prev function
-    function prev() {
+// prev function
+function prev() {
+    if (slides.length > 0) {
         slides[index].classList.remove('active');
         index = (index - 1 + slides.length) % slides.length;
-        slides[index].classList.add('active')
+        slides[index].classList.add('active');
     }
+}
 
     // setInterval(next, 5000);
     setTimeout(next, 3000);
